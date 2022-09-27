@@ -49,6 +49,10 @@ import 'package:image_slider/image_slider.dart';
         slider: _getSlider(),
         imagePath: 'assets/button.png',
     )
+    
+
+    
+
 
 ## Additional information
 

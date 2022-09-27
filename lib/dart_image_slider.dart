@@ -1,16 +1,16 @@
-library image_slider;
+library dart_image_slider;
 
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class ImageSlider extends StatefulWidget {
+class DartImageSlider extends StatefulWidget {
   final String imagePath;
   final Slider slider;
   final int thumbWidth;
   final int thumbHeight;
 
-  const ImageSlider(
+  const DartImageSlider(
       {super.key,
       required this.slider,
       required this.imagePath,
@@ -18,10 +18,10 @@ class ImageSlider extends StatefulWidget {
       this.thumbHeight = 50});
 
   @override
-  State<ImageSlider> createState() => _ImageSliderState();
+  State<DartImageSlider> createState() => _DartImageSliderState();
 }
 
-class _ImageSliderState extends State<ImageSlider> {
+class _DartImageSliderState extends State<DartImageSlider> {
   late MyShape myShape;
   bool _loading = true;
 

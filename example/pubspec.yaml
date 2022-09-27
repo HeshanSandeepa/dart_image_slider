@@ -31,7 +31,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  image_slider:
+  dart_image_slider:
     path: ../
 
 

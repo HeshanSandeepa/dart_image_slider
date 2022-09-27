@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:image_slider/image_slider.dart';
+import 'package:dart_image_slider/dart_image_slider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Image Slider Demo Home Page'),
+      home: const MyHomePage(title: 'Dart Image Slider'),
     );
   }
 }
@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text(widget.title),
         ),
-        body: ImageSlider(
+        body: DartImageSlider(
           slider: _getSlider(),
           imagePath: 'assets/button.png',
         ));
