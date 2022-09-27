@@ -11,29 +11,46 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+* image_slider facilitates adding any assets image as the thumb shape of a slider.
+* provided Slider is entirely configurable as needed with it's on custom theme.
+* only the assets image path and subjected slider are need to be provided.
+
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+import image_slider as follows,
+
+import 'package:image_slider/image_slider.dart';
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+01. Create Slider
 
-```dart
-const like = 'sample';
-```
+    Slider _getSlider() {
+        return Slider(
+        value: _currentValue,
+        max: 100,
+        divisions: 10,
+        label: _currentValue.round().toString(),
+        onChanged: (double value) {
+            setState(() {
+            });
+        },
+    );
+    }
+    
+02. Place the image in the assets folder & define assets in pubspec.yaml file
+
+03. provide slider & image path to the image_slider as follows,
+
+    ImageSlider(
+        slider: _getSlider(),
+        imagePath: 'assets/button.png',
+    )
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+This packages supports  only for assets images for the moments.
+
